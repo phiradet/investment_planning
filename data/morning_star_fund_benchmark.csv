@@ -1,0 +1,19 @@
+morning_star_id,name,type
+THCA000003,Mid-Long Term Bond,category
+FOUSA06TOI,ThaiBMA Composite Bond TR THB,index
+THCA000013,Global Bond,category
+THCA000002,Equity Large-Cap,category
+FOUSA08875,SET 50 TR THB,index
+THCA000027,US Equity,category
+XIUSA000RN,MSCI US,index
+THCA000030,EU Equity,category
+XIUSA000PL,MSCI EU,index
+THCA000010,Emerging Market Equity,category
+XIUSA04F2P,MSCI EM,index
+THCA000009,Global Equity,category
+XIUSA000RO,MSCI World,index
+THCA000026,Commodity Precious Metals,category
+THCA000035,Property Indirect,category
+FOUSA0928T,SET Property-Construction TR THB,index
+THCA000037,Property Indirect Global,category
+XIUSA04FM9,MSCI Word-Real Estate,index
