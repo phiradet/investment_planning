@@ -7,6 +7,9 @@ from typing import *
 from bs4 import BeautifulSoup
 
 
+data_source = os.environ["FUND_DATA_SRC"]
+
+
 def extract_symbol_info(page_source: str) -> Dict[str, str]:
     soup = BeautifulSoup(page_source, "html.parser")
 
@@ -17,18 +20,19 @@ def extract_symbol_info(page_source: str) -> Dict[str, str]:
 
 
 def extract_symbol_nav(sym_name: str, sym_id: str) -> List[Dict[str, Union[str, int]]]:
-    data_source = os.environ["FUND_DATA_SRC"]
-    req_url = f"{data_source}/q?fund={sym_id}&range=SI"
+    req_url = f"{data_source}/fn3/api/fund/nav/q?fund={sym_id}&range=SI"
     response = requests.get(req_url)
     response_json = response.json()
 
     for i in range(len(response_json)):
         response_json[i]["name"] = sym_name
+        response_json[i]["morningstar_id"] = sym_id
         response_json[i]["value"] = float(response_json[i]["value"])
     return response_json
 
 
-def get_data(url: str, output_dir: Optional[str]=None, verbose=True):
+def get_nav(fund: str, output_dir: Optional[str] = None, verbose: bool = True):
+    url = f"{data_source}/fund/{fund}"
     if verbose:
         print("Start getting information from", url)
     page_source_res = requests.get(url)
@@ -52,4 +56,4 @@ def get_data(url: str, output_dir: Optional[str]=None, verbose=True):
 
 
 if __name__ == "__main__":
-    fire.Fire(get_data)
+    fire.Fire(get_nav)
