@@ -1,19 +1,22 @@
-morning_star_id,name,type
-THCA000003,Mid-Long Term Bond,category
-FOUSA06TOI,ThaiBMA Composite Bond TR THB,index
-THCA000013,Global Bond,category
-THCA000002,Equity Large-Cap,category
-FOUSA08875,SET 50 TR THB,index
-THCA000027,US Equity,category
-XIUSA000RN,MSCI US,index
-THCA000030,EU Equity,category
-XIUSA000PL,MSCI EU,index
-THCA000010,Emerging Market Equity,category
-XIUSA04F2P,MSCI EM,index
-THCA000009,Global Equity,category
-XIUSA000RO,MSCI World,index
-THCA000026,Commodity Precious Metals,category
-THCA000035,Property Indirect,category
-FOUSA0928T,SET Property-Construction TR THB,index
-THCA000037,Property Indirect Global,category
-XIUSA04FM9,MSCI Word-Real Estate,index
+morning_star_id,name,type,country
+THCA000003,Mid-Long Term Bond,category,TH
+FOUSA06TOI,ThaiBMA Composite Bond TR THB,index,TH
+THCA000013,Global Bond,category,TH
+F0GBR0585V,PIMCO GIS Total Return Bond,index,UK
+THCA000002,Equity Large-Cap,category,TH
+FOUSA08875,SET 50 TR THB,index,TH
+THCA000027,US Equity,category,TH
+XIUSA000RN,MSCI US,index,TH
+THCA000030,EU Equity,category,TH
+XIUSA000PL,MSCI EU,index,TH
+THCA000010,Emerging Market Equity,category,TH
+XIUSA04F2P,MSCI EM,index,TH
+THCA000009,Global Equity,category,TH
+XIUSA000RO,MSCI World,index,TH
+THCA000026,Commodity Precious Metals,category,TH
+0P00002DCR,SPDR Gold,index,UK
+THCA000035,Property Indirect,category,TH
+FOUSA0928T,SET Property-Construction TR THB,index,TH
+THCA000037,Property Indirect Global,category,TH
+XIUSA04FM9,MSCI Word-Real Estate,index,TH
+F0GBR05V8L,Janus Henderson Horizon Global Property Equities Fund A2 USD,index,UK
